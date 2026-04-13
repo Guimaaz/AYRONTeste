@@ -6,7 +6,7 @@ def motor():
         model="llama3",
     )
     pergunta = "Responda em uma frase: O que é o projeto NORYA?"
-    #pergunta para testar o modelo, provavelmente sme o RAG, ele alucinará em alguma resposta sobre siglas ou ongs 
+    #pergunta para testar o modelo, provavelmente sem o RAG ele alucinará em alguma resposta sobre siglas ou ongs 
     print(f"Você perguntou: {pergunta}")
 
     resposta = llm.invoke(pergunta)
