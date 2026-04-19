@@ -1,11 +1,11 @@
 from langchain_community.vectorstores import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_text_splitters import MarkdownHeaderTextSplitter
+from langchain_text_splitters import MarkdownHeaderTextSplitter # especificamente para separar por markdown com marcação # 
 
 #passo 1
 def contrucao_banco_vetorial () :
     print("Lendo arquivo markdown ")
-    split = [("#", "Titulo_principal"), ("#", "Titulo_Secundario")]
+    split = [("#", "Titulo_principal"), ("##", "Titulo_Secundario")]
     markdown_splitter = MarkdownHeaderTextSplitter(split) 
 
 #passo 2

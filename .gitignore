@@ -1,3 +1,11 @@
 AYRONORYA.md
 
 vector_db
+
+.venv/
+
+.vscode/
+
+prompts.py
+
+__pycache__
